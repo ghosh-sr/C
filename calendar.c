@@ -32,7 +32,10 @@ int matrix(int m, int b, int n)
 	}
 	while(d<=n)
 	{
-		printf( RESET "%2d\t",d);
+		if(b==7)
+			printf( GRE "%2d\t",d);
+		else
+			printf( RESET "%2d\t",d);
 		d++;
 		if(b>=7)
 		{
